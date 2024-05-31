@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>
+    <app-card-title [title]="vehicle.properties.name"></app-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-basic-property [property]="'Model'" [value]="vehicle.properties.model"></app-basic-property>
+    <app-basic-property [property]="'Class'" [value]="vehicle.properties.vehicle_class"></app-basic-property>
+    <app-basic-property [property]="'Manufacturer'" [value]="vehicle.properties.manufacturer"></app-basic-property>
+    <app-basic-property [property]="'Cargo capacity'" [value]="vehicle.properties.cargo_capacity"></app-basic-property>
+    <app-basic-property [property]="'Consumable'" [value]="vehicle.properties.consumables"></app-basic-property>
+    <app-basic-property [property]="'Crew'" [value]="vehicle.properties.crew"></app-basic-property>
+    <app-basic-property [property]="'Passengers'" [value]="vehicle.properties.passengers"></app-basic-property>
+    <app-basic-property [property]="'Cost in credits'" [value]="vehicle.properties.cost_in_credits"></app-basic-property>
+    <app-basic-property [property]="'Max atmosphering speed'" [value]="vehicle.properties.max_atmosphering_speed"></app-basic-property>
+  </mat-card-content>
+</mat-card>

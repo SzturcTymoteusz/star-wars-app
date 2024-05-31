@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <app-card-title [title]="starship.properties.name"></app-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-basic-property [property]="'Model'" [value]="starship.properties.model"></app-basic-property>
+    <app-basic-property [property]="'Class'" [value]="starship.properties.starship_class"></app-basic-property>
+    <app-basic-property [property]="'MGLT'" [value]="starship.properties.MGLT"></app-basic-property>
+    <app-basic-property [property]="'Crew'" [value]="starship.properties.crew"></app-basic-property>
+    <app-basic-property [property]="'Passengers'" [value]="starship.properties.passengers"></app-basic-property>
+    <app-basic-property [property]="'Cargo capacity'" [value]="starship.properties.cargo_capacity"></app-basic-property>
+    <app-basic-property [property]="'Consumables'" [value]="starship.properties.consumables"></app-basic-property>
+    <app-basic-property [property]="'Cost in credits'" [value]="starship.properties.cost_in_credits"></app-basic-property>
+    <app-basic-property [property]="'Hyperdrive rating'" [value]="starship.properties.hyperdrive_rating"></app-basic-property>
+    <app-basic-property [property]="'Manufacturer'" [value]="starship.properties.manufacturer"></app-basic-property>
+    <app-basic-property [property]="'Mac atmosphering speed'" [value]="starship.properties.max_atmosphering_speed"></app-basic-property>
+    <app-basic-property [property]="'Length'" [value]="starship.properties.length"></app-basic-property>
+  </mat-card-content>
+</mat-card>

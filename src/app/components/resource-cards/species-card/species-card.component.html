@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-header>
+    <app-card-title [title]="species.properties.name"></app-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-basic-property [property]="'Classification'" [value]="species.properties.classification"></app-basic-property>
+    <app-basic-property [property]="'Designation'" [value]="species.properties.designation"></app-basic-property>
+    <app-basic-property [property]="'Language'" [value]="species.properties.language"></app-basic-property>
+    <app-basic-property [property]="'Home planet'" [value]="species.properties.homeworld_name"></app-basic-property>
+    <app-basic-property [property]="'Average height'" [value]="species.properties.average_height"></app-basic-property>
+    <app-basic-property [property]="'Average lifespan'" [value]="species.properties.average_lifespan"></app-basic-property>
+    <app-basic-property [property]="'Eye color'" [value]="species.properties.eye_colors"></app-basic-property>
+    <app-basic-property [property]="'Hair color'" [value]="species.properties.hair_colors"></app-basic-property>
+    <app-basic-property [property]="'Skin color'" [value]="species.properties.skin_colors"></app-basic-property>
+    <app-array-property [property]="'Characters'" [values]="species.properties.people_names"></app-array-property>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <app-card-title [title]="planet.properties.name"></app-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-basic-property [property]="'Climate'" [value]="planet.properties.climate"></app-basic-property>
+    <app-basic-property [property]="'Terrain'" [value]="planet.properties.terrain"></app-basic-property>
+    <app-basic-property [property]="'Gravity'" [value]="planet.properties.gravity"></app-basic-property>
+    <app-basic-property [property]="'Surface water'" [value]="planet.properties.surface_water"></app-basic-property>
+    <app-basic-property [property]="'Population'" [value]="planet.properties.population"></app-basic-property>
+    <app-basic-property [property]="'Diameter'" [value]="planet.properties.diameter"></app-basic-property>
+    <app-basic-property [property]="'Rotation period'" [value]="planet.properties.rotation_period"></app-basic-property>
+    <app-basic-property [property]="'Orbital period'" [value]="planet.properties.orbital_period"></app-basic-property>
+  </mat-card-content>
+</mat-card>

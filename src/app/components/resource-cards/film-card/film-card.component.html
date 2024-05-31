@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-header>
+    <app-card-title [title]="film.properties.title"></app-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-basic-property [property]="'Producer'" [value]="film.properties.producer"></app-basic-property>
+    <app-basic-property [property]="'Director'" [value]="film.properties.director"></app-basic-property>
+    <app-basic-property [property]="'Release data'" [value]="film.properties.release_date"></app-basic-property>
+    <app-basic-property [property]="'Episode'" [value]="film.properties.episode_id"></app-basic-property>
+    <app-basic-property [property]="'Opening crawl'" [value]="film.properties.opening_crawl"></app-basic-property>
+    <app-array-property [property]="'Characters'" [values]="film.properties.character_names"></app-array-property>
+    <app-array-property [property]="'Species'" [values]="film.properties.species_names"></app-array-property>
+    <app-array-property [property]="'Planets'" [values]="film.properties.planet_names"></app-array-property>
+    <app-array-property [property]="'Starships'" [values]="film.properties.starship_names"></app-array-property>
+    <app-array-property [property]="'Vehicles'" [values]="film.properties.vehicle_names"></app-array-property>
+  </mat-card-content>
+</mat-card>

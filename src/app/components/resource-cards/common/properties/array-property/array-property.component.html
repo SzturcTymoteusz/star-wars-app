@@ -1,0 +1,13 @@
+<div class="property">
+  <div class="property-name">{{property}}:</div>
+  <div class="property-values">
+    @for (value of visibleValues; track value; let last = $last ) {
+      <li>
+        {{value}}
+        @if (last && values.length > visibleValues.length) {
+          <span>... +{{values.length - visibleValues.length}}</span>
+        }
+      </li>
+    }
+  </div>
+</div>

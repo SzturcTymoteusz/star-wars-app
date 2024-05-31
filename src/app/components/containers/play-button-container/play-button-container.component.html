@@ -1,0 +1,3 @@
+<button (click)="play()" mat-raised-button>
+  {{(gameData.currentGame$ | async) ? 'Play again' : 'Start game'}}
+</button>

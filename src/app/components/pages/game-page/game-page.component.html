@@ -1,0 +1,21 @@
+<div class="container">
+  <app-resource-button-container></app-resource-button-container>
+
+  <div class="players-container">
+    <app-player-container [player]="(gameData.playerOne$ | async)!"></app-player-container>
+    <app-player-container [player]="(gameData.playerTwo$ | async)!"></app-player-container>
+  </div>
+
+  <app-play-button-container></app-play-button-container>
+</div>
+
+@if (!(gameData.isReady$ | async) || (gameData.isLoading$ | async)){
+  <app-spinner></app-spinner>
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <app-card-title [title]="people.properties.name"></app-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-basic-property [property]="'Height'" [value]="people.properties.height"></app-basic-property>
+    <app-basic-property [property]="'Mass'" [value]="people.properties.mass"></app-basic-property>
+    <app-basic-property [property]="'Gender'" [value]="people.properties.gender"></app-basic-property>
+    <app-basic-property [property]="'Hair color'" [value]="people.properties.hair_color"></app-basic-property>
+    <app-basic-property [property]="'Eye color'" [value]="people.properties.eye_color"></app-basic-property>
+    <app-basic-property [property]="'Skin color'" [value]="people.properties.skin_color"></app-basic-property>
+    <app-basic-property [property]="'Birth year'" [value]="people.properties.birth_year"></app-basic-property>
+    <app-basic-property [property]="'Home planet'" [value]="people.properties.homeworld_name"></app-basic-property>
+  </mat-card-content>
+</mat-card>

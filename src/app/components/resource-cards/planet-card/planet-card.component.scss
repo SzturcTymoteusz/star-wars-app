@@ -1,0 +1,10 @@
+mat-card {
+  min-height: 300px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url('/assets/planet.jpeg');
+  background-position: center;
+  background-size: cover;
+
+  mat-card-header {
+    text-align: center;
+  }
+}
